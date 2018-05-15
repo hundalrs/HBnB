@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<HTML lang="en">
+  <HEAD>
+    <TITLE>HBNB</TITLE>
+  </HEAD>
+  <BODY>
+    <H1>States</H1>
+    <UL>
+      {% for states, cities in sc.items()|sort(attribute='0.name') %}
+      <LI>{{ states.id }}: <B>{{ states.name }}</B></LI>
+        <UL>
+          for {% for city in cities|sort(attribute='name') %}
+	  <LI>{{ city.id }}: <B>{{ city.name }}</B></LI>
+	  {% endfor %}
+        </UL>
+      </LI>
+      {% endfor %}
+    </UL>
+  </BODY>
+</HTML>
