@@ -1,1 +1,2 @@
 # HBnB
+In the following directories, you can find various iterations of my AirBnB Clone known as HBnB. HBnB_v4 is my most up-to-date version of this project. For specifics about each iteration of the project, please look at the README in that iteration's respective directory.
